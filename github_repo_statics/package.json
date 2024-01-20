@@ -13,7 +13,8 @@
   "license": "ISC",
   "dependencies": {
     "fs": "^0.0.1-security",
-    "octokit": "^3.1.2"
+    "octokit": "^3.1.2",
+    "promisify-child-process": "^4.1.2"
   },
   "devDependencies": {
     "@types/node": "^20.11.5",

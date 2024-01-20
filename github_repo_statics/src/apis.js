@@ -1,4 +1,4 @@
-import { OWNER } from "./constant.js";
+const OWNER = process.env.Owner;
 export const keyAPIS = (repo) => ({
   commits: `/repos/${OWNER}/${repo}/commits`,
   stars: `/repos/${OWNER}/${repo}`,
