@@ -1,7 +1,7 @@
 import { Octokit } from "octokit";
 // Replace with your personal access token
 export const ACCESS_TOKEN =
-"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";
+"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";
 
 const octokit = new Octokit({
   auth: ACCESS_TOKEN,

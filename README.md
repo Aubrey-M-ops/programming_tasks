@@ -20,6 +20,7 @@ npm install
 ```shell
 Owner=Kaggle npm start 
 ```
+✨ Owner is a variable and can be any account.
 
 ### Generated Results
 
