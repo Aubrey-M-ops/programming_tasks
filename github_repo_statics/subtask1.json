@@ -1,0 +1,147 @@
+{
+  "allRepoData": {
+    ".allstar": {
+      "commits": 1,
+      "stars": 1,
+      "contributors": 0,
+      "branches": 1,
+      "tags": 0,
+      "forks": 0,
+      "releases": 0,
+      "closedIssues": 0,
+      "environments": 0
+    },
+    "docker-julia": {
+      "commits": 84,
+      "stars": 36,
+      "contributors": 6,
+      "branches": 1,
+      "tags": 0,
+      "forks": 13,
+      "releases": 0,
+      "closedIssues": 9,
+      "environments": 0
+    },
+    "docker-python": {
+      "commits": 2311,
+      "stars": 2300,
+      "contributors": 130,
+      "branches": 28,
+      "tags": 193,
+      "forks": 921,
+      "releases": 145,
+      "closedIssues": 1316,
+      "environments": 0
+    },
+    "docker-rcran": {
+      "commits": 455,
+      "stars": 18,
+      "contributors": 8,
+      "branches": 6,
+      "tags": 0,
+      "forks": 14,
+      "releases": 0,
+      "closedIssues": 70,
+      "environments": 0
+    },
+    "docker-rstats": {
+      "commits": 438,
+      "stars": 138,
+      "contributors": 17,
+      "branches": 1,
+      "tags": 91,
+      "forks": 91,
+      "releases": 72,
+      "closedIssues": 201,
+      "environments": 0
+    },
+    "jupyterlab": {
+      "commits": 36,
+      "stars": 42,
+      "contributors": 4,
+      "branches": 3,
+      "tags": 0,
+      "forks": 10,
+      "releases": 0,
+      "closedIssues": 7,
+      "environments": 0
+    },
+    "kaggle-api": {
+      "commits": 153,
+      "stars": 5747,
+      "contributors": 33,
+      "branches": 6,
+      "tags": 5,
+      "forks": 1049,
+      "releases": 5,
+      "closedIssues": 384,
+      "environments": 0
+    },
+    "kaggle-environments": {
+      "commits": 420,
+      "stars": 265,
+      "contributors": 27,
+      "branches": 67,
+      "tags": 19,
+      "forks": 136,
+      "releases": 6,
+      "closedIssues": 227,
+      "environments": 0
+    },
+    "kagglehub": {
+      "commits": 62,
+      "stars": 6,
+      "contributors": 5,
+      "branches": 11,
+      "tags": 8,
+      "forks": 1,
+      "releases": 1,
+      "closedIssues": 68,
+      "environments": 0
+    },
+    "learntools": {
+      "commits": 2618,
+      "stars": 424,
+      "contributors": 29,
+      "branches": 32,
+      "tags": 2,
+      "forks": 222,
+      "releases": 0,
+      "closedIssues": 433,
+      "environments": 0
+    },
+    "pipelinehelpers": {
+      "commits": 2,
+      "stars": 7,
+      "contributors": 1,
+      "branches": 1,
+      "tags": 0,
+      "forks": 6,
+      "releases": 0,
+      "closedIssues": 0,
+      "environments": 0
+    }
+  },
+  "totalData": {
+    "commits": 6580,
+    "stars": 8984,
+    "contributors": 260,
+    "branches": 157,
+    "tags": 318,
+    "forks": 2463,
+    "releases": 229,
+    "closedIssues": 2715,
+    "environments": 0
+  },
+  "medianData": {
+    "commits": 153,
+    "stars": 42,
+    "contributors": 8,
+    "branches": 6,
+    "tags": 2,
+    "forks": 14,
+    "releases": 0,
+    "closedIssues": 70,
+    "environments": 0
+  }
+}

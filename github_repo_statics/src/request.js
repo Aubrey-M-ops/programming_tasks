@@ -1,6 +1,7 @@
 import { Octokit } from "octokit";
+// Replace with your personal access token
 export const ACCESS_TOKEN =
-  "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"; // 替换为你的个人访问令牌
+"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";
 
 const octokit = new Octokit({
   auth: ACCESS_TOKEN,
@@ -38,7 +39,6 @@ export const octoRequest = async (url, params = {}, isPagination = true) => {
     }
     return data;
   } catch (error) {
-    // console.error(error);
     throw error;
   }
 };

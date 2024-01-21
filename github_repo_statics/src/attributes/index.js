@@ -1,8 +1,9 @@
 import fs from "fs";
-import { commonAPIs, keyAPIS } from "../apis.js";
+import { keyAPIS } from "../apis.js";
 import { octoRequest } from "../request.js";
+import _ from "lodash";
 
-const DEFAULT_STATICS = {
+export const DEFAULT_STATICS = {
   commits: 0,
   stars: 0,
   contributors: 0,
@@ -43,13 +44,16 @@ export const getRepoData = async (repoName) => {
 export const getAllRepoData = async (repos) => {
   let allData = {};
   for (const repo of repos) {
-    const repoData = await getRepoData(repo.name);
+    const repoName = repo.name;
+    const repoData = await getRepoData(repoName);
+    console.log(`⌛️ Analyzing repo attributes =====> ${repoName}`)
+    // print the intermediate results
     fs.writeFile(
       `log/${repo.name}.json`,
       JSON.stringify(repoData),
       (err) => err && console.log(err)
     );
-    allData = { ...allData, [repo.name]: repoData };
+    allData = { ...allData, [repo.name]: _.cloneDeep(repoData) };
   }
   return allData;
 };
