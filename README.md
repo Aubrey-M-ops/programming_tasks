@@ -32,7 +32,7 @@ Owner=Kaggle npm start
 
 The report can be opened automatically after starting the project.
 
-
+> There is also a **Description.pdf** for this task
 
 ## Task 2
 
