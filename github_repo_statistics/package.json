@@ -12,6 +12,7 @@
   "author": "Mohan Li",
   "license": "ISC",
   "dependencies": {
+    "cloc": "^1.98.0-cloc",
     "fs": "^0.0.1-security",
     "json-to-markdown-table": "^1.0.0",
     "live-server": "^1.2.2",

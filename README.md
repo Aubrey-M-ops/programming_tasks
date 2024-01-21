@@ -25,7 +25,7 @@ Owner=Kaggle npm start
 
 #### JSON version
 
-`subtask1.json` and `subtask2.json`
+`subtask1.json` and `subtask2.json` in src/reportGenerator
 
 #### Visualized Table
 
