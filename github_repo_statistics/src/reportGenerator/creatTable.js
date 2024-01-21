@@ -1,4 +1,5 @@
 const readJSON = async (filePath) => {
+  // fetch can be used in browser environment instead of 'fs'
   const data = await fetch(filePath)
     .then((response) => {
       if (!response.ok) {
@@ -26,20 +27,21 @@ const formatFileData = (fileData, category) => {
   return tableData;
 };
 
-export const getTableData = async (filePath) => {
+const getTableData = async (filePath) => {
   const fileData = await readJSON(filePath);
-  console.log(fileData);
+  console.log(fileData, filePath)
   const repoData = fileData.allRepoData;
   const statisticsData = {
     total: fileData.totalData,
     median: fileData.medianData,
   };
+  console.log(fileData, fileData.allRepoData, 'repo')
   const repoTableData = formatFileData(repoData, "repository");
   const statisticsTableData = formatFileData(statisticsData, "");
   return { repoTableData, statisticsTableData };
 };
 
-export const creatTable = (tableData, tableHeaders, container) => {
+const creatTable = (tableData, tableHeaders, container) => {
   const tableContainer = document.getElementById(
     container ?? "table-container"
   );
@@ -71,7 +73,7 @@ export const creatTable = (tableData, tableHeaders, container) => {
   tableContainer.appendChild(table);
 };
 
-getTableData("../../subtask1.json").then((tableData_task1) => {
+getTableData("./subtask1.json").then((tableData_task1) => {
   creatTable(
     tableData_task1.repoTableData,
     Object.keys(tableData_task1.statisticsTableData[0]),
@@ -84,12 +86,7 @@ getTableData("../../subtask1.json").then((tableData_task1) => {
   );
 });
 
-getTableData("../../subtask2.json").then((tableData_task2) => {
-  creatTable(
-    tableData_task2.repoTableData,
-    Object.keys(tableData_task2.statisticsTableData[0]),
-    "table3"
-  );
+getTableData("./subtask2.json").then((tableData_task2) => {
   creatTable(
     tableData_task2.statisticsTableData,
     Object.keys(tableData_task2.statisticsTableData[0]),

@@ -34,6 +34,7 @@ export const scanCode = async (repos) => {
         `cloc --json repositories/${repoName}`
       );
       const repoData = JSON.parse(stdout);
+      // ignore the irrelevant keys
       delete repoData["SUM"];
       delete repoData["header"];
       // Only keep key "code" (which represents for code lines)

@@ -28,6 +28,7 @@ export const getKeyData = async (repoName, key) => {
   return data?.length;
 };
 
+// get one RepoData
 export const getRepoData = async (repoName) => {
   const currentRepoData = DEFAULT_STATICS;
   // Use Promise.all to wait for all asynchronous operations to complete
@@ -40,7 +41,7 @@ export const getRepoData = async (repoName) => {
   return currentRepoData;
 };
 
-// get Repo information
+// get all Repo information
 export const getAllRepoData = async (repos) => {
   let allData = {};
   for (const repo of repos) {

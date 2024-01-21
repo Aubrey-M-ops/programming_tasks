@@ -55,7 +55,7 @@ def get_comment_url(issue_key):
 
 def crawl_one_issue(issue_key):
     """
-    main method, search html to find useful information after webpage is loaded in selenium
+    main method, search html to find useful information
 
     Parameters
     ----------
@@ -100,7 +100,6 @@ def crawl_one_issue(issue_key):
             list(map(lambda a: a.text.strip(), fixfor_soup.find_all("a")))
         )
     labels_val = detail_mod.find("div", "labels-wrap value").text
-    # custom_field_mod = browse_soup.find("div", "customfieldmodule")
 
     # People section
     people_mod = browse_soup.find("div", id="peoplemodule")
